@@ -20,15 +20,15 @@ botonAñadir.addEventListener("click", function(){
     /* Posteriormente, muestre los elementos del array en una tabla.*/
 
     
-    let tablaDatos = document.getElementById("tablaProductos").insertRow(-1);
+    let filaDatos = document.getElementById("tablaProductos").insertRow(-1);
     for(let i = 0; i < arregloProducto.length; i++){
-        tablaDatos.insertCell(i).innerHTML = arregloProducto[i];
+        filaDatos.insertCell(i).innerHTML = arregloProducto[i];
     }
 
 
     /* Y la última columna de esta tabla contenga unos botones con las acciones de eliminar y actualizar información del producto. */
 
-    const ultimaCelda = tablaDatos.insertCell(4);   
+    const ultimaCelda = filaDatos.insertCell(4);   
     const botonEliminar = document.createElement("button");
     botonEliminar.textContent = "Eliminar"
     const botonEditar = document.createElement("button");
