@@ -6,7 +6,6 @@ const cantidadProducto = document.getElementById("cantidadProducto");
 const categoriaProducto = document.getElementById("categoriaProducto");
 const botonAñadir = document.getElementById("añadir");
 
-
 botonAñadir.addEventListener("click", function(){
     /* Luego, agregue estos datos en un array y mostrarlo en consola. */
     const arregloProducto = [];
@@ -24,7 +23,6 @@ botonAñadir.addEventListener("click", function(){
     for(let i = 0; i < arregloProducto.length; i++){
         filaDatos.insertCell(i).innerHTML = arregloProducto[i];
     }
-
 
     /* Y la última columna de esta tabla contenga unos botones con las acciones de eliminar y actualizar información del producto. */
 
