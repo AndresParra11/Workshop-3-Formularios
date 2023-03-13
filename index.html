@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Workshop 3</title>
+</head>
+
+<body>
+    <h1 id="tituloPrincipal">Workshop 3: Formularios y eventos</h1>
+    <form>
+        <div>
+            <label for="nombreProducto" class="labels">Nombre del producto: </label>
+            <input type="text" name="nombreProducto" id="nombreProducto" class="inputs"/>
+        </div>
+
+        <div>
+            <label for="precioProducto" class="labels">Precio del producto: </label>
+            <input type="number" name="precioProducto" id="precioProducto" class="inputs"/>
+        </div>
+        <div>
+            <label for="cantidadProducto" class="labels">Cantidad del producto: </label>
+            <input type="number" name="cantidadProducto" id="cantidadProducto" class="inputs"/>
+        </div>
+        <div>
+            <label for="categoriaProducto" class="labels">Categoría del producto: </label>
+            <input list="categorias" name="categoriaProducto" id="categoriaProducto"class="inputs"/>
+            <datalist id="categorias">
+                <option value="A"></option>
+                <option value="B"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+        </div>
+        <div class="botonAñadir">
+            <label for="añadir"></label>
+            <input type="button" name="añadir" id="añadir" value="Añadir">
+        </div>
+    </form>
+    <table id="tablaProductos" >
+        <thead>
+            <tr>
+                <th class="encabezados">Nombre del producto</th>
+                <th class="encabezados">Precio</th>
+                <th class="encabezados">Cantidad</th>
+                <th class="encabezados">Categoría</th>
+                <th class="encabezados">Eliminar</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
